@@ -1,3 +1,4 @@
+// courtesy of Rock the JVM
 class Entity
 
 val dumbEntity = new Entity
@@ -103,6 +104,14 @@ MySingleton(33)
  * - serialization - simple to encode/decode (because of apply)
  * - pattern matching
  */
+case class MagicalNamedEntity(name :String, complexity: Int)
+
+val a1 = MagicalNamedEntity("Zeus", 200)
+val a2 = MagicalNamedEntity("Zeus", 200)
+val a3 = MagicalNamedEntity("Hera", 300)
+
+println("Zeus is the same as Zeus?", a1 == a2)
+
 
 // exceptions
 try{

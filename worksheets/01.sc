@@ -1,3 +1,4 @@
+// courtesy of Rock the JVM
 println("Play with worksheets")
 println("Even more")
 val a = 42
